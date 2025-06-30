@@ -1,0 +1,122 @@
+/* Import a modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* A deep, dark space-themed gradient */
+    background: linear-gradient(135deg, #1d2b4a 0%, #0c0d14 100%);
+    color: #f0f0f0; /* Light text color for dark background */
+    min-height: 100vh; /* Ensure background covers the full view height */
+}
+
+/* Limit the width for better readability on large screens */
+.container {
+    max-width: 750px;
+}
+
+/* Style the main title with a vibrant, glowing neon gradient */
+h1.text-center {
+    font-weight: 700;
+    font-size: 3rem;
+    /* The Neon Gradient! */
+    background: linear-gradient(45deg, #00f6ff, #ff00ff, #f79d00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 2.5rem !important;
+    text-shadow: 0 0 10px rgba(0, 246, 255, 0.3), 0 0 20px rgba(255, 0, 255, 0.3);
+}
+
+h2 {
+    color: #e0e0e0;
+    border-bottom: 2px solid rgba(0, 246, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+/* "Glassmorphism" card style for a futuristic look */
+.card {
+    background: rgba(22, 28, 41, 0.6); /* Dark, semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px); /* The frosted glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Style form elements for the dark theme */
+.form-label {
+    color: #c0c0c0;
+    font-weight: 400;
+}
+
+.form-control, .form-select {
+    background-color: rgba(16, 22, 34, 0.8); /* Dark input background */
+    color: #f0f0f0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control::placeholder {
+    color: #888;
+}
+
+/* Add a neon glow on focus */
+.form-control:focus, .form-select:focus {
+    background-color: #101622;
+    border-color: #00f6ff;
+    box-shadow: 0 0 15px rgba(0, 246, 255, 0.4);
+    color: #fff;
+}
+
+/* Style the primary button to be the star of the show */
+.btn-primary {
+    background: linear-gradient(45deg, #00f6ff, #ff00ff);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 5px 20px rgba(255, 0, 255, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 246, 255, 0.4);
+}
+
+/* Style the expense list for a clean, futuristic feel */
+#expenseList .list-group-item {
+    background-color: rgba(22, 28, 41, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    color: #e0e0e0;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+    border-left: 4px solid transparent; /* Prepare for hover effect */
+}
+
+#expenseList .list-group-item:hover {
+    background: rgba(40, 50, 70, 0.8);
+    transform: translateX(10px);
+    border-left: 4px solid #00f6ff; /* Neon highlight on hover */
+}
+
+/* Style the action buttons in the list */
+.btn-danger, .btn-warning {
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, opacity 0.2s;
+}
+.btn-danger:hover, .btn-warning:hover {
+    transform: scale(1.15); /* Make buttons pop more */
+    opacity: 0.9;
+}
